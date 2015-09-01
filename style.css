@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    width: 789px;
+    height: auto;
+    margin: 0px auto;
+}
+.list{
+    float: right;
+    padding-top: 10px;
+}
+.box-list ul li{
+    cursor: pointer;
+    background: url("pic/listype-icon.png") no-repeat;
+    display: block;
+    float: left;/*这里是精髓，把两张图片向左浮动，然后用高度和宽度剪切成需要的*/
+    width: 30px;
+    height: 26px;
+}
+.box-list ul li.list1{
+    background-position: 0px -26px;/*往左是+往右是-，上是+下是-*/
+}
+.box-list ul li.list2{
+    background-position: -30px -26px;
+}
+ul{
+    list-style-type: none;//把两个点去掉
+}
+.box-list{
+    margin: 0px auto;
+    width: 700px;
+    height: 42px;
+    border-bottom: 1px solid #eeeeee;
+}
+img{
+    width: 235px;
+    height: 230px;
+}
+.box-pic .list-1-0{
+    width: 235px;
+    height: 260px;/*盒子和图片一样大，所以文字会在下面*/
+    float: left;
+    border: 1px solid #eeeeee;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.box-pic .list-0-1{
+    height: 295px;
+}
